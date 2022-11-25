@@ -14,10 +14,11 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr *ngFor="let i for posts">
-                            <th scope="row">{{i.userId}}</th>
+                          <tr *ngFor="let i of posts">
+                            <th>{{i.userId}}</th>
                             <td>{{i.id}}</td>
                             <td>{{i.title}}</td>
+                            <td>{{i.body}}</td>
                             <td>{{i.body}}</td>
                           </tr>
                          
