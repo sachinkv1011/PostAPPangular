@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-post.component.css']
 })
 export class AddPostComponent {
+  userId=""
+  id=""
+  title=""
+  body=""
+
+  postFunction=()=>
+  {
+    let post:any={
+      "userId":this.userId,
+      "id":this.id,
+      "title":this.title,
+      "body":this.body
+
+    }
+    console.log(post)
+  }
 
 }
